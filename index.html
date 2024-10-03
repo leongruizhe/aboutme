@@ -4,48 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Leong Rui Zhe - Cyber Security</title>
+    <title>Leong Rui Zhe - Cyber Security Professional</title>
     <style>
+        /* Global Styling */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #e0f7fa;
+            background-color: #f4f4f9;
         }
 
-        /* Header section */
+        /* Header Section */
         .header {
-            background-color: #007bff;
+            background: linear-gradient(90deg, rgba(0,123,255,1) 0%, rgba(2,132,199,1) 100%);
             color: white;
             text-align: center;
             padding: 100px 20px;
+            position: relative;
         }
 
         .header h1 {
             font-size: 50px;
             margin: 0;
+            font-weight: bold;
         }
 
         .header h2 {
-            font-size: 25px;
-            margin: 10px 0 20px;
+            font-size: 28px;
+            margin: 15px 0 25px;
         }
 
         .header .buttons {
-            margin-top: 30px;
+            margin-top: 40px;
         }
 
         .header .btn {
             text-decoration: none;
             color: white;
-            padding: 10px 20px;
             background-color: #0056b3;
-            border-radius: 5px;
-            margin: 0 10px;
+            padding: 15px 30px;
+            border-radius: 25px;
+            margin: 0 15px;
+            font-size: 16px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background-color 0.3s;
         }
 
         .header .btn:hover {
-            background-color: #004494;
+            background-color: #003f8f;
         }
 
         .social-links {
@@ -53,34 +60,43 @@
         }
 
         .social-links a {
-            margin: 0 15px;
+            margin: 0 10px;
             color: white;
+            font-size: 18px;
             text-decoration: none;
+            display: inline-block;
         }
 
-        /* About Me Section */
+        .social-links a:hover {
+            color: #d1ecf1;
+        }
+
+        /* About Section */
         .about-section {
-            padding: 50px 20px;
-            background-color: #fff;
+            background-color: white;
+            padding: 80px 20px;
             text-align: center;
         }
 
         .about-section h2 {
             color: #007bff;
-            margin-bottom: 20px;
+            font-size: 36px;
+            margin-bottom: 25px;
         }
 
         .about-section p {
             font-size: 18px;
-            margin-bottom: 30px;
+            color: #555;
             line-height: 1.6;
+            margin-bottom: 40px;
         }
 
+        /* Tab Navigation */
         .tabs {
             display: flex;
             justify-content: center;
-            gap: 20px;
-            margin-bottom: 30px;
+            gap: 30px;
+            margin-bottom: 40px;
         }
 
         .tabs button {
@@ -88,8 +104,10 @@
             font-size: 16px;
             border: none;
             background-color: #f4f4f9;
+            color: #007bff;
             cursor: pointer;
-            border-radius: 5px;
+            border-radius: 10px;
+            transition: background-color 0.3s, color 0.3s;
         }
 
         .tabs button.active {
@@ -97,9 +115,16 @@
             color: white;
         }
 
-        /* Tab content */
+        .tabs button:hover {
+            background-color: #0056b3;
+            color: white;
+        }
+
+        /* Tab Content */
         .tab-content {
             display: none;
+            font-size: 18px;
+            color: #555;
         }
 
         .tab-content.active {
@@ -110,9 +135,36 @@
         footer {
             background-color: #007bff;
             color: white;
-            text-align: center;
             padding: 20px 0;
-            margin-top: 40px;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header h1 {
+                font-size: 36px;
+            }
+
+            .header h2 {
+                font-size: 22px;
+            }
+
+            .header .buttons {
+                flex-direction: column;
+            }
+
+            .about-section h2 {
+                font-size: 30px;
+            }
+
+            .tabs {
+                flex-direction: column;
+            }
         }
     </style>
 </head>
@@ -123,12 +175,12 @@
         <h1>Leong Rui Zhe</h1>
         <h2>Cyber Security Professional</h2>
         <div class="buttons">
-            <a href="#contact" class="btn">Hire Me</a>
+            <a href="https://leongruizhe.github.io/contact.html/" class="btn">Hire Me</a>
             <a href="#portfolio" class="btn">View Portfolio</a>
         </div>
         <div class="social-links">
-            <a href="#">LinkedIn</a> | 
-            <a href="#">GitHub</a> | 
+            <a href="https://www.linkedin.com/in/leongruizhe">LinkedIn</a> | 
+            <a href="https://github.com/leongruizhe">GitHub</a> | 
             <a href="#">Twitter</a>
         </div>
     </div>
